@@ -5,10 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
 
-/*
-Author: Casey Smith, Twitter: @subTee
-License: BSD 3-Clause
-*/
 
 namespace Compute
 {
